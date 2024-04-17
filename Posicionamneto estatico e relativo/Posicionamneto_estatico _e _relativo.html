@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Posicionamento estatico e relativo</title>
+	<style type="text/css"> /*todos podem usar top, rigth, left e bottom para posicionamneto*/
+		
+		body{background: #007fc7}
+
+		#container{background: #fff;
+			width: 800px;
+			margin: 10px auto;
+			padding: 10px;}
+
+			h1{}
+
+			p{width: 300px;}
+
+			.absolut{position: absolute;}
+
+			.relative{border: 1px solid red;
+				position: relative;}
+				
+
+	
+	</style> <!-- position: static é o posicionamneto padrão 
+			      
+			      position: absolute altera posição sem afetar a proxima camada sobresaindo ela se for preciso 
+			  	  
+			  	  position: relative altera a posição mas afetando a proxima camada sem sobresair
+			  	  
+			  	  position: fixed deixa a classe fixa andando junto com a pagina-->
+</head>
+<body>
+
+	<div id="container">
+		<h1>Posicionamnetos</h1>
+		<p> P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu malesuada purus.</p>
+
+		<p class="absolut"> P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu malesuada purus.</p>
+
+		<p> P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu malesuada purus.</p>
+	</div>
+
+</body>
+</html>
